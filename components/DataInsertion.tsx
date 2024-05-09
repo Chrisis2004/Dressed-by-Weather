@@ -33,24 +33,9 @@ export default function DataInsertion() {
                     </div>
 
                     <div>
-                        <label
-                            htmlFor="province"
-                            className="block text-sm font-medium leading-6 text-gray-900"
-                        >
-                            Select the province
-                        </label>
-                        <SearchSelect id={"province"}>
-                            <SearchSelectItem value="1">Option 1</SearchSelectItem>
-                            <SearchSelectItem value="2">Option 2</SearchSelectItem>
-                            <SearchSelectItem value="3">Option 3</SearchSelectItem>
-                        </SearchSelect>
-                    </div>
-
-
-                    <div>
                         <button
                             onClick={() => {
-                                window.location.href = "http://localhost:3001";
+                                window.location.href = "http://localhost:3001/dressPage";
                             }}
                             type="submit"
                             className="flex w-full justify-center rounded-md bg-red-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600"
