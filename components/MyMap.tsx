@@ -8,7 +8,7 @@ const Map = ({ lat, lng } : {lat: number, lng:number}) => {
     const [position, setPosition] = useState<[number, number]>([lat, lng]);
     function Mark() {
         const map = useMapEvents({
-            click: ({ latlng }) => {
+            click: ({latlng }) => {
                 setPosition([latlng.lat, latlng.lng]);
             },
         });
@@ -18,7 +18,7 @@ const Map = ({ lat, lng } : {lat: number, lng:number}) => {
     return (
         <MapContainer
             center={[position[0], position[1]]}
-            zoom={6}
+            zoom={13}
             scrollWheelZoom={false}
             style={{ height: "100%" }}
         >
